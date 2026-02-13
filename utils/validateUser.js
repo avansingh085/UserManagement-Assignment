@@ -19,3 +19,19 @@ export const userValidationSchema = Joi.object({
 
   }).required()
 });
+
+export const userUpdateSchema = Joi.object({
+  name: Joi.string().trim().min(2),
+  email: Joi.string().email().lowercase(),
+  phone: Joi.string().min(10),
+  company: Joi.string().trim(),
+  address: Joi.object({
+    city: Joi.string().trim(),
+    zipcode: Joi.string(),
+    geo: Joi.object({
+      lat: Joi.number(),
+      lng: Joi.number()
+    })
+  })
+}).min(1); 
+

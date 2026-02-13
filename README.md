@@ -40,7 +40,7 @@ This is a User Management API that provides CRUD operations for users with the f
 
 1. **Clone/Navigate to the project directory**
    ```bash
-   cd Backend-Assignment
+   cd UserManagement-Assignment
    ```
 
 2. **Install dependencies**
@@ -189,7 +189,7 @@ Host: localhost:5000
 
 **Request:**
 ```http
-GET /api/users/507f1f77bcf86cd799439011 HTTP/1.1
+GET /api/users/507f1f77bcf86cd799439011 
 Host: localhost:5000
 ```
 

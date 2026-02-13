@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import User from "../models/user.models.js";
 import { sendResponse } from "../utils/sendResponse.js";
-import { userValidationSchema } from "../utils/validateUser.js";
+import { userUpdateSchema, userValidationSchema } from "../utils/validateUser.js";
 
 
 export const getAllUsers = async (req, res) => {
@@ -69,7 +69,7 @@ export const updateUser = async (req, res) => {
       return sendResponse(res, 400, false, "Invalid ID format");
     }
 
-    const { error, value } = userValidationSchema.validate(req.body, {
+    const { error, value } = userUpdateSchema.validate(req.body, {
       abortEarly: false,
       stripUnknown: true
     });
