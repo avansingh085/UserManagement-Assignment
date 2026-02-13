@@ -4,18 +4,6 @@ A RESTful API backend built with Node.js, Express, and MongoDB for managing user
 
 ---
 
-## Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [Tech Stack](#tech-stack)
-3. [Project Setup](#project-setup)
-4. [Environment Configuration](#environment-configuration)
-5. [Database Schema](#database-schema)
-6. [API Endpoints](#api-endpoints)
-7. [Error Handling](#error-handling)
-
----
-
 ## Project Overview
 
 This is a User Management API that provides CRUD operations for users with the following features:
